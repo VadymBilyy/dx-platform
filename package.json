@@ -60,7 +60,7 @@
       "/node_modules/"
     ]
   },
-  "author": "devexperts",
+  "author": "vadim",
   "license": "MPL-2.0",
   "devDependencies": {
     "@types/jest": "^24.0.11",

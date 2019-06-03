@@ -10,7 +10,10 @@
     "clean": "dx-tools clean dist",
     "prepare": "yarn clean && yarn build",
     "start": "dx-tools storybook",
-    "watch": "dx-tools build-lib src dist -w"
+    "watch": "dx-tools build-lib src dist -w",
+    "docs": "typedoc --logger none ./src",
+    "deploy": "gh-pages -d docs",
+    "deploy:docs": "yarn docs && yarn deploy"
   },
   "repository": {
     "type": "git",
@@ -33,6 +36,7 @@
     "classnames": "^2.2.5",
     "date-fns": "^1.29.0",
     "element-resize-detector": "^1.1.12",
+    "gh-pages": "^2.0.1",
     "hoist-non-react-statics": "^2.5.0",
     "prop-types": "^15.6.0",
     "rxjs": "^6.2.2",
@@ -63,6 +67,8 @@
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.6.0",
     "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react-dom": "^16.4.0",
+    "typedoc": "^0.14.2",
+    "typedoc-plugin-markdown": "^1.1.27"
   }
 }

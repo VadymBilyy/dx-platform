@@ -11,9 +11,9 @@
     "prepare": "yarn clean && yarn build",
     "start": "dx-tools storybook",
     "watch": "dx-tools build-lib src dist -w",
-    "docs": "typedoc --logger none ./src",
-    "deploy": "gh-pages -d docs",
-    "deploy:docs": "yarn docs && yarn deploy"
+    "docs:gen": "typedoc --logger none ./src",
+    "docs:publish": "gh-pages -d docs",
+    "publish:docs": "yarn docs:gen && yarn docs:publish"
   },
   "repository": {
     "type": "git",

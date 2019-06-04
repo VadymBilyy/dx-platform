@@ -12,7 +12,7 @@
     "build:kit": "cd packages/react-kit && yarn build",
     "build:tools": "cd packages/tools && yarn build",
     "build": "yarn build:tools && yarn build:kit",
-    "docs:kit": "cd packages/react-kit && yarn deploy:docs",
+    "docs:kit": "cd packages/react-kit && yarn publish:docs",
     "jest": "jest",
     "prettier": "prettier --list-different \"./packages/**/src/**/*.{ts,tsx}\"",
     "prettier:fix": "prettier --write \"./packages/**/src/**/*.{ts,tsx}\"",

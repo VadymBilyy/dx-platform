@@ -4,3 +4,4 @@ packages/demo
 .idea
 dist
 lerna-debug.log
+.npmrc
